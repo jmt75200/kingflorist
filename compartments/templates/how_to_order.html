@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Airship</title>
-    </head>
-    <body>
-      {{{ template }}}
-    </body>
-  </html>
+<div class="col-12"><h1>{{name}}</h1></div>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <h2>{{fields.subtitle_one}}</h2>
+      {{{fields.order_info}}}
+    </div>
+    <div class="col-8">{{{fields.history}}}</div>
+  </div>
+  <div class="row">
+    <div class="col-4"><h2>{{fields.subtitle_two}}</h2></div>
+    <div class="col-8">{{{fields.delivery_desc}}}</div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <h2>{{fields.subtitle_three}}</h2>
+    </div>
+    <div class="col-8">{{{fields.payment_desc}}}</div>
+  </div>
+</div>

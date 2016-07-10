@@ -1,10 +1,40 @@
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Airship</title>
-    </head>
-    <body>
-      {{{ template }}}
-    </body>
-  </html>
+<div class="row">
+  <div class="col-12">
+    <h1>Services</h1>
+  </div>
+</div>
+<div class="sub_nav">
+  <nav class="service_nav">
+    <ul>
+      <li><a href="/services-wedding-flowers">Wedding Flowers</a></li>
+      <li><a href="/services-sympathy-flowers">Sympathy Flowers</a></li>
+      <li><a href="/services-occasions">Special Occasions</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12"><h2>{{name}}</h2></div>
+    {{{fields.service_desc}}}
+  </div>
+  <div class="row">
+    <!-- List of Services -->
+    <div class="col-12">
+      {{#each related_items.services}}
+        <div class="col-4">
+          <img src="{{fields.featured_image}}" alt="{{fields.title}} King Florist Oahu">
+          <h4>{{fields.title}}</h4>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="row">
+    <!-- List of Recognition -->
+    {{#each related_items.recognize}}
+      <div class="col-4">
+        <img src="{{fields.featured_image}}" alt="{{fields.title}} King Florist Oahu">
+        <h5>{{fields.title}}</h5>
+      </div>
+    {{/each}}
+  </div>
+</div>

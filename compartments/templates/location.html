@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Airship</title>
-    </head>
-    <body>
-      {{{ template }}}
-    </body>
-  </html>
+<div class="col-12"><h1>{{name}}</h1></div>
+<div class="container">
+  <div class="row">
+    <h2>{{fields.subtitle}}</h2>
+    <div class="col-4"><img src="{{fields.featured_image}}" alt="King Florist Location Oahu" /></div>
+    <div class="col-8">
+      {{fields.hours}}
+      {{{fields.contact}}}
+    </div>
+  </div>
+  <div class="row">
+    <!-- Google Map -->
+  </div>
+</div>

@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Airship</title>
-    </head>
-    <body>
-      {{{ template }}}
-    </body>
-  </html>
+<div class="col-12"><h1>{{name}} King Florist</h1></div>
+<div class="container">
+  <div class="row">
+    <h2>{{fields.subtitle_one}}</h2>
+    <div class="col-4"><img src="{{fields.history_image}}" alt="History of King Florist" /></div>
+    <div class="col-8">{{{fields.history}}}</div>
+  </div>
+  <div class="row">
+    <h2>{{fields.subtitle_two}}</h2>
+    <div class="col-4"><img src="{{fields.present_image}}" alt="History of King Florist" /></div>
+    <div class="col-8">{{{fields.present}}}</div>
+  </div>
+</div>
