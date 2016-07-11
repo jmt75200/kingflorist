@@ -173,6 +173,9 @@ h2, h3, h4, h5 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
+  [class*='tile-'] img {
+    opacity: 0;
+    width: 1px; }
 
 .caption {
   position: relative; }
