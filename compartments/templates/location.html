@@ -1,14 +1,24 @@
-<div class="col-12"><h1>{{name}}</h1></div>
+<div class="col-12"><h1 class="center_text">{{name}}</h1></div>
 <div class="container">
   <div class="row">
-    <h2>{{fields.subtitle}}</h2>
+    <div class="col-12">
+      <h2 class="center_text">{{fields.subtitle}}</h2>
+    </div>
     <div class="col-4"><img src="{{fields.featured_image}}" alt="King Florist Location Oahu" /></div>
     <div class="col-8">
-      {{fields.hours}}
-      {{{fields.contact}}}
+      <div class="col-6">
+        {{{fields.contact}}}
+      </div>
+      <div class="col-6">
+        {{fields.hours}}
+      </div>
     </div>
   </div>
   <div class="row">
-    <!-- Google Map -->
+    <div class="col-12">
+      <!-- Google Map -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1667.312723246581!2d-157.8423811298701!3d21.30104898323064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006de90be06abd%3A0xf72807862aacfaf9!2s1296+S+Beretania+St+%23103%2C+Honolulu%2C+HI+96814!5e0!3m2!1sen!2sus!4v1468197733228" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
   </div>
 </div>

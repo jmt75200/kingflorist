@@ -1,2 +1,72 @@
-<h1>{{ fields.header }}</h1>
-    <div>{{ fields.body }}</div>
+<div class="col-12">
+  <h1 class="center_text">{{ fields.header }}</h1>
+  <div class="col-9 center center_text">{{ fields.body }}</div>
+  <div class="row container">
+    <div class="col-12 tiles">
+      <div class="col-6">
+        <div class="tile-one" style="background-image: url('{{fields.caption_image_one}}')">
+          <!-- <img src="{{fields.tile_one_image}}" alt="King Florist Oahu"> -->
+        </div>
+        <div class="caption">
+          {{#each fields.caption_one}}
+            <a href="{{url}}" class="col-12"><h4>{{title}}</h4></a>
+          {{/each}}
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="tile-two" style="background-image: url('{{fields.caption_image_two}}')">
+          <!-- <img src="{{fields.tile_one_image}}" alt="King Florist Oahu"> -->
+        </div>
+        <div class="caption">
+          {{#each fields.caption_two}}
+            <a href="{{url}}" class="col-12"><h4>{{title}}</h4></a>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+    <div class="col-8 tiles">
+      <div class="col-6">
+        <div class="tile-three" style="background-image: url('{{fields.caption_image_three}}')">
+          <!-- <img src="{{fields.tile_one_image}}" alt="King Florist Oahu"> -->
+        </div>
+        <div class="caption">
+          {{#each fields.caption_three}}
+            <a href="{{url}}" class="col-12"><h4>{{title}}</h4></a>
+          {{/each}}
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="tile-four" style="background-image: url('{{fields.caption_image_four}}')">
+          <!-- <img src="{{fields.tile_one_image}}" alt="King Florist Oahu"> -->
+        </div>
+        <div class="caption">
+          {{#each fields.caption_four}}
+            <a href="{{url}}" class="col-12"><h4>{{title}}</h4></a>
+          {{/each}}
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="tile-six" style="background-image: url('{{fields.caption_image_six}}')">
+          <!-- <img src="{{fields.tile_one_image}}" alt="King Florist Oahu"> -->
+        </div>
+          <div class="caption">
+            {{#each fields.caption_six}}
+              <a href="{{url}}" class="col-12"><h4>{{title}}</h4></a>
+            {{/each}}
+          </div>
+      </div>
+    </div>
+    <div class="col-4 tiles">
+      <div class="col-12">
+        <div class="tile-five" style="background-image: url('{{fields.caption_image_five}}')">
+          <!-- <img src="{{fields.tile_one_image}}" alt="King Florist Oahu"> -->
+        </div>
+        <div class="caption">
+          {{#each fields.caption_five}}
+            <a href="{{url}}" class="col-12"><h4>{{title}}</h4></a>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

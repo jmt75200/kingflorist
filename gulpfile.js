@@ -12,7 +12,7 @@ gulp.task('connect', function() {
 
 //Task for Sass
 gulp.task('sass', function() {
-  return gulp.src('./sass/*')
+  return gulp.src('./sass/**/*.scss')
     .pipe(sass({ errLogToConsole: true}))
     .pipe(gulp.dest('./compartments/styles'));
 });

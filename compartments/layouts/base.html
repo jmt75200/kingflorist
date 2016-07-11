@@ -7,22 +7,34 @@
         <link rel="stylesheet" href="/assets/styles/main.css">
       </head>
       <body>
-        <header>
-          <div class="left">
-            <a href="/" class="logo_link"><h3>King Florist</h3></a>
+        <div class="wrapper">
+          <header class="row">
+            <div class="left col-3">
+              <a href="/" class="logo_link col-12"><h2 class="center_text">King Florist</h2></a>
+            </div>
+            <div class="col-9">
+              <nav class="main_nav row">
+                <ul class="col-9 right">
+                  <li><a href="/services-wedding-flowers" class="col-3">Services</a></li>
+                  <li><a href="/about" class="col-3">About</a></li>
+                  <li><a href="/how-to-order" class="col-3">How to Order</a></li>
+                  <li><a href="/hours-location" class="col-3">Location</a></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+          <div class="content row">
+            {{{ template }}}
           </div>
-          <div class="right">
-            <nav>
-              <ul>
-                <li><a href="/services-wedding-flowers">Services</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/how-to-order">How to Order</a></li>
-                <li><a href="/hours-location">Location</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        {{{ template }}}
+          <footer class="row">
+            <div class="col-6">
+              <h4>King Florist</h4>
+              <address>1296 S. Beretania St. #103 <br> Honolulu, HI 96814</address>
+              <p><b>PH:</b> 808.597.1802 <span class="pipe">|</span> <b>FAX:</b> 808.597.1804 <br><b>Email:</b> kingfloristhi@gmail.com</p>
+            </div>
+            <div class="col-12 center_text">Copyright 2016 | <a href="http://www.kingflorist.com">KingFlorist.com</a></div>
+          </footer>
+        </div><!-- end of wrapper -->
       </body>
-      <!-- todo: add footer -->
+      <!-- footer -->
     </html>

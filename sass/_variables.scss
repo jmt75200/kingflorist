@@ -1,0 +1,19 @@
+//Project Variables
+
+@import url(https://fonts.googleapis.com/css?family=Oxygen:300|Raleway:200);
+
+//Font
+$body-font: 'Oxygen', sans-serif;
+$header-font: 'Raleway', sans-serif;
+
+//Colors
+$active-item: #D8D8D8;
+$link: #87CBB6;
+
+//Grid variables
+$grid-columns: 12;
+$grid-max-width: 65em;
+
+//Breakpoints
+$breakpoint-small: 'only screen and (min-width: 20em)';
+$breakpoint-medium: 'only screen and (min-width: 30em)';

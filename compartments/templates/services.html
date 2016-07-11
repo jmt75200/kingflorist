@@ -1,39 +1,48 @@
 <div class="row">
   <div class="col-12">
-    <h1>Services</h1>
+    <h1 class="center_text">Services</h1>
   </div>
 </div>
-<div class="sub_nav">
+<div class="row">
   <nav class="service_nav">
-    <ul>
-      <li><a href="/services-wedding-flowers">Wedding Flowers</a></li>
-      <li><a href="/services-sympathy-flowers">Sympathy Flowers</a></li>
-      <li><a href="/services-occasions">Special Occasions</a></li>
+    <ul class="col-7 center">
+      <li><a href="/services-wedding-flowers" class="col-4">Wedding Flowers</a></li>
+      <li><a href="/services-sympathy-flowers" class="col-4">Sympathy Flowers</a></li>
+      <li><a href="/services-occasions" class="col-4">Special Occasions</a></li>
     </ul>
   </nav>
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-12"><h2>{{name}}</h2></div>
-    {{{fields.service_desc}}}
+    <div class="col-12">
+      <h2 class="center_text">{{name}}</h2>
+      <div class="col-9 center center_text">
+        {{{fields.service_desc}}}
+      </div>
+    </div>
   </div>
   <div class="row">
     <!-- List of Services -->
     <div class="col-12">
       {{#each related_items.services}}
         <div class="col-4">
-          <img src="{{fields.featured_image}}" alt="{{fields.title}} King Florist Oahu">
-          <h4>{{fields.title}}</h4>
+          <div class="service" style="background-image: url('{{fields.featured_image}}');">
+            <img src="{{fields.featured_image}}" alt="{{fields.title}} King Florist Oahu">
+          </div>
+          <h4 class="center_text">{{fields.title}}</h4>
         </div>
       {{/each}}
     </div>
   </div>
-  <div class="row">
+  <div class="recognize row">
+    <div class="col-12">
+      <h4>Recognition</h4>
+    </div>
     <!-- List of Recognition -->
     {{#each related_items.recognize}}
-      <div class="col-4">
+      <div class="col-2">
         <img src="{{fields.featured_image}}" alt="{{fields.title}} King Florist Oahu">
-        <h5>{{fields.title}}</h5>
+        <h5 class="center_text">{{fields.title}}</h5>
       </div>
     {{/each}}
   </div>

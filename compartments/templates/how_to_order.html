@@ -1,20 +1,40 @@
-<div class="col-12"><h1>{{name}}</h1></div>
-<div class="container">
-  <div class="row">
-    <div class="col-4">
-      <h2>{{fields.subtitle_one}}</h2>
-      {{{fields.order_info}}}
+<div class="row">
+  <div class="col-12"><h1 class="center_text">{{name}}</h1></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="col-10">
+          <h3>{{fields.subtitle_one}}</h3>
+          {{{fields.order_info}}}
+        </div>
+      </div>
+      <div class="col-8 left_border">
+        <!-- Order Form -->
+      </div>
     </div>
-    <div class="col-8">{{{fields.history}}}</div>
-  </div>
-  <div class="row">
-    <div class="col-4"><h2>{{fields.subtitle_two}}</h2></div>
-    <div class="col-8">{{{fields.delivery_desc}}}</div>
-  </div>
-  <div class="row">
-    <div class="col-4">
-      <h2>{{fields.subtitle_three}}</h2>
+    <div class="row">
+      <div class="col-4">
+        <div class="col-10">
+          <h3>{{fields.subtitle_two}}</h3>
+        </div>
+      </div>
+      <div class="col-8 left_border">
+        <div class="col-12">
+          {{{fields.delivery_desc}}}
+        </div>
+      </div>
     </div>
-    <div class="col-8">{{{fields.payment_desc}}}</div>
+    <div class="row">
+      <div class="col-4">
+        <div class="col-10">
+          <h3>{{fields.subtitle_three}}</h3>
+        </div>
+      </div>
+      <div class="col-8 left_border">
+        <div class="col-12">
+          {{{fields.payment_desc}}}
+        </div>
+      </div>
+    </div>
   </div>
 </div>

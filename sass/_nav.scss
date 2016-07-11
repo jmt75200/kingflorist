@@ -1,0 +1,48 @@
+//Navigation Styles
+nav ul{
+  list-style-type: none;
+}
+
+.main_nav{
+  ul {
+    li {
+      a {
+        text-align: center;
+        border-bottom: 3px solid #fff;
+        text-transform: uppercase;
+        font-size: 13px;
+
+        &:hover{
+          color: $active-item;
+          border-bottom: 3px solid $active-item;
+        }
+      }
+    }
+  }
+}
+
+.service_nav{
+  padding-bottom: 20px;
+
+  ul{
+    li{
+      a{
+        text-align: center;
+        border-bottom: 3px solid #fff;
+
+        &:hover, &:active{
+          color: $active-item;
+          border-bottom: 3px solid $active-item;
+        }
+      }
+    }
+  }
+}
+
+.service{
+  border: 2px solid #fff;
+  &:hover{
+    border: 2px solid $active-item;
+    cursor: pointer;
+  }
+}

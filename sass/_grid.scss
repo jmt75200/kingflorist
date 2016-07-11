@@ -1,0 +1,71 @@
+// Grid Layout
+*,
+*:after,
+*:before{
+  margin: 0;
+  padding: 0;
+  @include boxsizing;
+}
+
+img{
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
+}
+
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+}
+
+//Center text
+.center_text{
+  text-align: center;
+  // border: 1px solid #000;
+}
+
+.center{
+  margin: 0 auto;
+  display: block;
+  // border: 1px solid #000;
+  float: none !important;
+}
+
+.left{
+  float: left !important;
+}
+
+.right{
+  float: right !important;
+  // border: 1px solid #000;
+}
+
+//Clearfix
+.wrapper,
+.row,
+.center{
+  @include clearfix;
+}
+
+//Columns
+[class*='col-']{
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px;
+}
+
+//Responsive columns
+@media #{$breakpoint-medium} {
+  .wrapper{
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+
+  @for $i from 1 through $grid-columns{
+    .col-#{$i}{
+      width: 100%/$grid-columns * $i;
+    }
+  }
+
+}

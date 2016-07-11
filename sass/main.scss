@@ -1,3 +1,7 @@
-body{
-  background-color: salmon;
-}
+@charset 'utf-8';
+
+@import 'mixins';
+@import 'variables';
+@import 'grid';
+@import 'nav';
+@import 'global';
