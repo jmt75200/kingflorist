@@ -1,0 +1,32 @@
+<div class="col-12"><h1 class="center_text">{{fields.title}}</h1></div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 show_image" style="background-image: url('{{fields.featured_image}}');">
+      <img src="{{fields.featured_image}}" alt="King Florist Oahu">
+    </div><!-- end of featured image col-->
+    <div class="col-12">
+      <div class="breadcrumbs">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><span class="pipe">></span></li>
+            {{#each categories}}
+            <li><a href="/services-{{permalink}}">{{title}}</a></li>
+            {{/each}}
+            <li><span class="pipe">></span></li>
+            <li>{{fields.title}}</li>
+          </ul>
+        </nav>
+      </div><!--end of breadcrumbs col-->
+      <div class="col-12">
+        <div class="col-8">
+          {{{fields.description}}}
+        </div>
+        <div class="col-4">
+          <button class="col-9 center" onClick="location.href='/how-to-order'">Order Today</button>
+        </div><!-- end of button column-->
+      </div><!-- end of content column-->
+    </div><!-- end of breadcrumbs and content col-->
+  </div><!-- end row-->
+</div>
+

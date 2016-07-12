@@ -19,14 +19,14 @@ gulp.task('sass', function() {
 
 //Task for Livereload
 gulp.task('livereload', function() {
-  gulp.src('./compartments/**/*')
+  gulp.src('./compartments/**/**/*')
     .pipe(connect.reload());
 });
 
 //Task for Watch
 gulp.task('watch', function() {
   gulp.watch('./sass/**/*', ['sass']);
-  gulp.watch('./compartments/**/*', ['livereload']);
+  gulp.watch('./compartments/**/**/*', ['livereload']);
 });
 
 //Default Task

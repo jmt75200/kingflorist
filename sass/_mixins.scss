@@ -25,3 +25,9 @@
   font-weight: $weight;
   // font-size: $size;
 }
+
+@mixin borderRadius ($radius){
+  border-radius: $radius;
+  -webkit-box-sizing: $radius;
+  -moz-box-sizing: $radius;
+}

@@ -26,10 +26,12 @@
     <div class="col-12">
       {{#each related_items.services}}
         <div class="col-4">
-          <div class="service" style="background-image: url('{{fields.featured_image}}');">
-            <img src="{{fields.featured_image}}" alt="{{fields.title}} King Florist Oahu">
-          </div>
-          <h4 class="center_text">{{fields.title}}</h4>
+          <a href="/services/view/{{permalink}}">
+            <div class="service" style="background-image: url('{{fields.featured_image}}');">
+              <img src="{{fields.featured_image}}" alt="{{fields.title}} King Florist Oahu">
+            </div>
+            <h4 class="center_text">{{fields.title}}</h4>
+          </a>
         </div>
       {{/each}}
     </div>
@@ -47,3 +49,4 @@
     {{/each}}
   </div>
 </div>
+{{{help}}}
