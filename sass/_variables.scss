@@ -15,5 +15,6 @@ $grid-columns: 12;
 $grid-max-width: 65em;
 
 //Breakpoints
+$breakpoint-small-below: 'only screen and (max-width: 30em)';
 $breakpoint-small: 'only screen and (min-width: 20em)';
 $breakpoint-medium: 'only screen and (min-width: 30em)';

@@ -9,12 +9,18 @@
       <body>
         <div class="wrapper">
           <header class="row">
-            <div class="left col-3">
+            <div class="left col-4">
               <a href="/" class="logo_link col-12"><h2 class="center_text">King Florist</h2></a>
             </div>
-            <div class="col-9">
+            <div class="col-8">
               <nav class="main_nav row">
-                <ul class="col-9 right">
+                <div class="mobile_nav small">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <ul class="col-10 right medium">
                   <li><a href="/services-wedding-flowers" class="col-3">Services</a></li>
                   <li><a href="/about" class="col-3">About</a></li>
                   <li><a href="/how-to-order" class="col-3">How to Order</a></li>
@@ -26,6 +32,7 @@
           <div class="content row">
             {{{ template }}}
           </div>
+          <!-- footer -->
           <footer class="row">
             <div class="col-6">
               <h4>King Florist</h4>
@@ -35,6 +42,7 @@
             <div class="col-12 center_text">Copyright 2016 | <a href="http://www.kingflorist.com">KingFlorist.com</a></div>
           </footer>
         </div><!-- end of wrapper -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="/assets/scripts/app.js"></script>
       </body>
-      <!-- footer -->
     </html>

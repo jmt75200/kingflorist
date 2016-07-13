@@ -69,3 +69,15 @@ img{
   }
 
 }
+
+.small{
+  @media #{$breakpoint-medium}{
+    display: none;
+  }
+}
+
+.medium{
+  @media #{$breakpoint-small-below}{
+    display: none;
+  }
+}
