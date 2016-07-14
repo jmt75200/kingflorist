@@ -45,3 +45,18 @@
   -o-transition: $time ease-in-out;
   transition: $time ease-in-out;
 }
+
+@mixin placeholder($color){
+  ::-webkit-input-placeholder {
+   color: $color;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+     color: $color;
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: $color;
+  }
+  :-ms-input-placeholder {
+     color: $color;
+  }
+}

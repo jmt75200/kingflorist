@@ -142,3 +142,20 @@ button{
     color: $active-item;
   }
 }
+
+//Forms
+form{
+  font-family: $body-font;
+  @include placeholder($active-item);
+  input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $active-item;
+    @include borderRadius(5px);
+    @include transitionKit(0.30s);
+  }
+  input:focus, textarea:focus, select:focus{
+    outline: none !important;
+    box-shadow: 0 0 5px $link;
+  }
+}

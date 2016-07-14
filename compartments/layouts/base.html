@@ -5,6 +5,7 @@
         <title>King Florist Oahu, Hawaii</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/assets/styles/main.css">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
       </head>
       <body>
         <div class="wrapper">
@@ -42,6 +43,10 @@
             <div class="col-12 center_text">Copyright 2016 | <a href="http://www.kingflorist.com">KingFlorist.com</a></div>
           </footer>
         </div><!-- end of wrapper -->
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe"
+        style="display:none;" onload="if(submitted)
+        {window.location='/how-to-order';}"></iframe>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="/assets/scripts/app.js"></script>
       </body>

@@ -317,3 +317,30 @@ button {
     border-bottom: 2px solid #ef9e9f;
     cursor: pointer;
     color: #D8D8D8; }
+
+form {
+  font-family: "Oxygen", sans-serif; }
+  form ::-webkit-input-placeholder {
+    color: #D8D8D8; }
+  form :-moz-placeholder {
+    /* Firefox 18- */
+    color: #D8D8D8; }
+  form ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #D8D8D8; }
+  form :-ms-input-placeholder {
+    color: #D8D8D8; }
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    -webkit-box-sizing: 5px;
+    -moz-box-sizing: 5px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  form input:focus, form textarea:focus, form select:focus {
+    outline: none !important;
+    box-shadow: 0 0 5px #ef9e9f; }
