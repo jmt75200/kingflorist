@@ -28,6 +28,13 @@ footer{
   margin-top: 100px;
   border-top: 1px solid $active-item;
 }
+
+.logo_link{
+  background-image: url('http://joelletorneros.com/kingflorist/kingflorist_icon.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 7% center;
+}
 .pipe{
   padding: 0 5px;
   color: $active-item;
@@ -107,7 +114,7 @@ h2, h3, h4, h5{
   }
 }
 
-.service{
+.image_container{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;

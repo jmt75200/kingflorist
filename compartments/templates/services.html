@@ -25,9 +25,9 @@
     <!-- List of Services -->
     <div class="col-12">
       {{#each related_items.services}}
-        <div class="col-4">
+        <div class="col-4 service">
           <a href="/services/view/{{permalink}}">
-            <div class="service" style="background-image: url('{{fields.featured_image}}');">
+            <div class="image_container" style="background-image: url('{{fields.featured_image}}');">
               <img src="{{fields.featured_image}}" alt="{{fields.title}} King Florist Oahu">
             </div>
             <h4 class="center_text">{{fields.title}}</h4>

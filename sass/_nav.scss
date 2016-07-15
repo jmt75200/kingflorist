@@ -106,10 +106,14 @@ nav ul{
 .service{
   border: 2px solid #fff;
   &:hover{
-    border: 2px solid $active-item;
+    border: 2px solid $link;
     cursor: pointer;
+    & .center_text{
+      color: $active-item;
+    }
   }
 }
+
 
 .breadcrumbs{
   padding: 20px 0;
