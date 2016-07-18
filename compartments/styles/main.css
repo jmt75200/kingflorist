@@ -220,9 +220,20 @@ a {
 
 header {
   border-bottom: 1px solid #D8D8D8; }
+  header .col-4 {
+    padding-left: 0 !important; }
+    @media only screen and (min-width: 30em) {
+      header .col-4 {
+        margin-left: -20px; } }
+    header .col-4 .col-12 {
+      padding-left: 0 !important; }
+  header .col-8 {
+    padding-right: 0px !important; }
+    header .col-8 .col-10 {
+      padding-right: 0 !important; }
 
-.content {
-  padding-bottom: 100px; }
+.add_margin_bottom {
+  padding-bottom: 50px; }
 
 .left_border {
   border-left: 1px solid #ccc;
@@ -232,6 +243,8 @@ header {
 footer {
   margin-top: 100px;
   border-top: 1px solid #D8D8D8; }
+  footer [class*='col-'] {
+    padding-left: 0 !important; }
 
 .logo_link {
   background-image: url("http://joelletorneros.com/kingflorist/kingflorist_icon.png");

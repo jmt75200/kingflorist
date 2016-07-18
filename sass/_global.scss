@@ -18,10 +18,25 @@ a{
 
 header{
   border-bottom: 1px solid $active-item;
+  .col-4{
+    padding-left: 0 !important;
+    @media #{$breakpoint-medium}{
+      margin-left: -20px;
+    }
+    .col-12{
+      padding-left: 0 !important;
+    }
+  }
+  .col-8{
+    padding-right: 0px !important;
+    .col-10{
+      padding-right: 0 !important;
+    }
+  }
 }
 
-.content{
-  padding-bottom: 100px;
+.add_margin_bottom{
+  padding-bottom: 50px;
 }
 
 .left_border{
@@ -33,6 +48,9 @@ header{
 footer{
   margin-top: 100px;
   border-top: 1px solid $active-item;
+  [class*='col-']{
+    padding-left: 0 !important;
+  }
 }
 
 .logo_link{
