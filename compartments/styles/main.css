@@ -220,17 +220,16 @@ a {
 
 header {
   border-bottom: 1px solid #D8D8D8; }
-  header .col-4 {
-    padding-left: 0 !important; }
-    @media only screen and (min-width: 30em) {
-      header .col-4 {
-        margin-left: -20px; } }
-    header .col-4 .col-12 {
+  @media only screen and (min-width: 30em) {
+    header .col-4 {
+      padding-left: 0 !important;
+      margin-left: -20px; }
+    header .col-12 {
       padding-left: 0 !important; }
-  header .col-8 {
-    padding-right: 0px !important; }
-    header .col-8 .col-10 {
+    header .col-8 {
       padding-right: 0 !important; }
+      header .col-8 .col-10 {
+        padding-right: 0 !important; } }
 
 .add_margin_bottom {
   padding-bottom: 50px; }
@@ -283,7 +282,7 @@ h2, h3, h4, h5 {
       border: 1px solid #ef9e9f; }
 
 [class*='tile-'] {
-  border: 1px solid #000;
+  border: 1px solid #D8D8D8;
   display: inline-block !important;
   min-height: 200px;
   width: 100%;

@@ -18,19 +18,19 @@ a{
 
 header{
   border-bottom: 1px solid $active-item;
-  .col-4{
-    padding-left: 0 !important;
-    @media #{$breakpoint-medium}{
+  @media #{$breakpoint-medium}{
+    .col-4{
+      padding-left: 0 !important;
       margin-left: -20px;
     }
     .col-12{
       padding-left: 0 !important;
     }
-  }
-  .col-8{
-    padding-right: 0px !important;
-    .col-10{
+    .col-8{
       padding-right: 0 !important;
+      .col-10{
+        padding-right: 0 !important;
+      }
     }
   }
 }
@@ -94,7 +94,7 @@ h2, h3, h4, h5{
 }
 
 [class*='tile-']{
-  border: 1px solid #000;
+  border: 1px solid $active-item;
   display: inline-block !important;
   min-height: 200px;
   width: 100%;
